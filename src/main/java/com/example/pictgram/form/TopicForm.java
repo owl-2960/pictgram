@@ -1,5 +1,7 @@
 package com.example.pictgram.form;
 
+import java.util.List;
+
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
@@ -9,6 +11,7 @@ import com.example.pictgram.validation.constraints.ImageByte;
 import com.example.pictgram.validation.constraints.ImageNotEmpty;
 
 import lombok.Data;
+
 
 @Data
 public class TopicForm {
@@ -30,5 +33,9 @@ public class TopicForm {
     private String description;
 
     private UserForm user;
+    
+    private List<FavoriteForm> favorites;
+    
+    private FavoriteForm favorite;
 
 }
