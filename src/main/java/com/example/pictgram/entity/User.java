@@ -85,4 +85,5 @@ public class User extends AbstractEntity implements UserDetails, UserInf {
     public boolean isEnabled() {
         return true;
     }
+
 }

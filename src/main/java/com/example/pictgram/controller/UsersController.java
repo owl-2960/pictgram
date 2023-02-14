@@ -42,8 +42,6 @@ public class UsersController {
 	}
 
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
-
-
 	public String create(@Validated @ModelAttribute("form") UserForm form, BindingResult result, Model model,
 			RedirectAttributes redirAttrs, Locale locale) {
 
