@@ -25,6 +25,12 @@
 					<th:block sec:authorize="isAuthenticated()">
 
 						<li class="nav-item"><a class="nav-link"
+							th:href="@{/calendars}"> <img
+								src="/images/icons/calendar.png"
+								th:src="@{/images/icons/calendar.png}">
+						</a></li>
+
+						<li class="nav-item"><a class="nav-link"
 							th:href="@{/favorites}"> <img src="/images/icons/heart.png"
 								th:src="@{/images/icons/heart.png}">
 
@@ -51,8 +57,11 @@
 								src="/images/icons/register.png"
 								th:src="@{/images/icons/register.png}">
 						</a></li>
-						<li class="nav-item"><a th:href="@{/logout}" class="nav-link convert" data-method="post" th:data-_csrf="${_csrf.token}">
-                <img src="/images/icons/logout.png" th:src="@{/images/icons/logout.png}">
+						<li class="nav-item"><a th:href="@{/logout}"
+							class="nav-link convert" data-method="post"
+							th:data-_csrf="${_csrf.token}"> <img
+								src="/images/icons/logout.png"
+								th:src="@{/images/icons/logout.png}">
 
 						</a></li>
 					</th:block>
